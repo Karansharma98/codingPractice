@@ -1,4 +1,4 @@
-package Entity;
+package entity;
 
 import jakarta.persistence.*;
 import lombok.Data;
@@ -15,4 +15,7 @@ public class Address {
     private String streetName;
     private String province;
     private String country;
+
+
+
 }

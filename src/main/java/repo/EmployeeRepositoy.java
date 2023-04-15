@@ -1,10 +1,9 @@
 package repo;
 
-import entity.Address;
+import entity.Employee;
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.stereotype.Repository;
 
 @Repository
-public interface Addressrepository extends JpaRepository<Address,Integer> {
-
+public interface EmployeeRepositoy extends JpaRepository<Employee, String> {
 }
