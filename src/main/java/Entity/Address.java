@@ -1,14 +1,16 @@
 package Entity;
 
-import jakarta.persistence.Entity;
-import jakarta.persistence.Id;
+import jakarta.persistence.*;
 import lombok.Data;
 
 @Entity
 @Data
 public class Address {
-    private String city;
     @Id
+    @GeneratedValue(strategy = GenerationType.AUTO)
+    private Integer addressId;
+    private String city;
+
     private String postalCode;
     private String streetName;
     private String province;
